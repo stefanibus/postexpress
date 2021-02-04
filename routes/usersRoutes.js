@@ -1,14 +1,11 @@
 const express = require("express");
+
+const usersControllers = require("../controllers/usersController");
+
 const router = express.Router();
 
-const ....
+router.get("/:id", usersControllers.getById);
 
-router.get('/:id', .................)
+router.get("/", usersControllers.getAll);
 
-
-router.get('/'), (req, res) => conaole.log('test root Folder');
-
-router.get('/:id')
-
-
-module.exports = Router;
+module.exports = router;
